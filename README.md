@@ -1,55 +1,51 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Next.js Google Maps Application
+# Next.js Google Maps Application
 
 This application is built using Next.js and renders a Google Map with markers based on data fetched from an API. It also includes an input field that filters the markers based on user input. If you click on a marker you will see the information of that facility.
 
-Features
+## Features
 
-Google Map rendering
-Marker placement based on API data
-Input field for filtering markers
-Display of information of the selected facility 
+- Google Map rendering
+- Marker placement based on API data
+- Input field for filtering markers
+- Display of information of the selected facility 
 
-Getting Started
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Prerequisites
+## Prerequisites
 
-Node.js
-npm
+- Node.js
+- npm
 
-Installing
+## Installing
 
-Clone the repository
+- Clone the repository
+- Navigate into the project directory
+- cd food-search
 
-Navigate into the project directory
+## Install the dependencies
 
-cd food-search
+- npm install
 
-Install the dependencies
+## Create a .env.local file in the root of your project and insert your Google Maps API Key:
 
-npm install
+- GOOGLE_MAPS_KEY=your-google-maps-api-key
 
-Create a .env.local file in the root of your project and insert your Google Maps API Key:
+## Run the development server
 
-GOOGLE_MAPS_KEY=your-google-maps-api-key
+- npm run dev
+- Open http://localhost:3000 with your browser to see the result.
 
-Run the development server
+## Usage
 
-npm run dev
+- The application fetches data from the San Francisco Government's Food Trucks API and places markers on the map based on the latitude and longitude provided in the data.
+- There is an input field that allows you to filter the markers. The markers will update in real-time as you type into the input field. The filter matches against the fooditems field in the data.
 
-Open http://localhost:3000 with your browser to see the result.
+## Built With
 
-Usage
-
-The application fetches data from the San Francisco Government's Food Trucks API and places markers on the map based on the latitude and longitude provided in the data.
-
-There is an input field that allows you to filter the markers. The markers will update in real-time as you type into the input field. The filter matches against the fooditems field in the data.
-
-Built With
-
-Next.js
-@react-google-maps/api
-@mui/material
+- Next.js
+- @react-google-maps/api
+- @mui/material
